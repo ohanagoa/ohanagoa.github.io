@@ -1,0 +1,42 @@
+---
+import { Font } from "astro:assets";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <Font cssVariable="--font-alice" preload />
+    <Font cssVariable="--font-oswald" preload />
+    <Font cssVariable="--font-roboto" preload />
+    <title>Ohana Goa</title>
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+
+    <style>
+      :root {
+        --bg-primary: #d7cccc;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        font-family: var(--font-roboto);
+      }
+
+      main {
+        font-family: var(--font-oswald);
+        display: grid;
+        height: 100dvh;
+        place-items: center;
+        padding: 0 2rem;
+      }
+    </style>
+  </body>
+</html>
