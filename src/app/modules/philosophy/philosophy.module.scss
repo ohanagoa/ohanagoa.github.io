@@ -2,19 +2,37 @@
   display: block;
   font-family: var(--font-alice);
   text-align: center;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--bg-primary);
+
+  h2 {
+    color: var(--text-secondary);
+  }
+
+  p {
+    color: var(--text-primary);
+  }
 
   ul {
-    padding: 0;
+    margin: 3rem 0;
+    padding: 0 0.5rem;
 
     li {
       display: flex;
       list-style: none;
       align-items: center;
+      text-align: start;
 
       &::before {
         content: "\2705";
         margin-right: 0.5rem;
       }
+
+    }
+
+    h3, p {
+      color: var(--text-dark);
     }
   }
 }

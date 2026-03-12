@@ -21,19 +21,29 @@ import { Font } from "astro:assets";
 
     <style>
       :root {
-        --bg-primary: #d7cccc;
+        --bg-primary: #fcfcfc;
+        --bg-secondary: #abb0b4;
+        --text-primary: #e27a63;
+        --text-secondary: #f4b65f;
+        --text-default: #d18787;
+        --text-dark: #00000095;
       }
+
       * {
         padding: 0;
         margin: 0;
         text-decoration: none;
         font-family: var(--font-roboto);
+        box-sizing: border-box;
       }
 
       main {
         font-family: var(--font-oswald);
+        background-color: var(--bg-secondary);
+        color: var(--text-secondary);
         display: grid;
         height: 100dvh;
+        overflow: scroll;
         place-items: center;
         padding: 0 2rem;
       }

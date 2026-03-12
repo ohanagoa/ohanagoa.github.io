@@ -12,8 +12,8 @@ export default function Philosophy() {
         capability and is governed largely by a top-down directive teaching
         approach. It primarily prepares children for a degree followed by a job.
       </p>
-      <p>At Ohana, we believe</p>
       <ul>
+        <h3>At Ohana, we believe</h3>
         {items.map((item, index) => (
           <li key={`item_${index}`}>
             <p dangerouslySetInnerHTML={{ __html: item }} />
@@ -21,11 +21,11 @@ export default function Philosophy() {
         ))}
       </ul>
       <p>
-        Our teachers are guides, mentors and co-learners. Between 2 and 6 years,
-        children tend to imitate life. We limit the directive approach in order
-        to allow children to find their own inner voice. Instead, we encourage
-        our teachers to be strong role models for their children, mimicking a
-        graceful, positive and gentle manner.
+        Our teachers are <i>guides, mentors and co-learners</i>. Between 2 and 6
+        years, children tend to imitate life. We limit the directive approach in
+        order to allow children to find their own inner voice. Instead, we
+        encourage our teachers to be strong role models for their children,
+        mimicking a graceful, positive and gentle manner.
       </p>
     </div>
   );
