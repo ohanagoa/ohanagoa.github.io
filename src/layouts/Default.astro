@@ -5,14 +5,14 @@ import { Font } from "astro:assets";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/jpg" href="/logo.jpg" />
+    <link rel="icon" href="/logo.jpg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <Font cssVariable="--font-alice" preload />
     <Font cssVariable="--font-oswald" preload />
     <Font cssVariable="--font-roboto" preload />
-    <title>Ohana Goa</title>
+    <title>Ohana Goa | With Love, in Service.</title>
   </head>
   <body>
     <main>
@@ -21,8 +21,11 @@ import { Font } from "astro:assets";
 
     <style>
       :root {
-        --bg-primary: #fcfcfc;
-        --bg-secondary: #abb0b4;
+        --bg-primary: #2f5d50;
+        --bg-secondary: #e9e2d0;
+        --text-color: #2c2c2c;
+        --text-accent: #c56a45;
+        --text-highlight: #6faf6a;
         --text-primary: #e27a63;
         --text-secondary: #f4b65f;
         --text-default: #d18787;
@@ -35,17 +38,16 @@ import { Font } from "astro:assets";
         text-decoration: none;
         font-family: var(--font-roboto);
         box-sizing: border-box;
+        scroll-behavior: smooth;
       }
 
       main {
+        position: relative;
         font-family: var(--font-oswald);
-        background-color: var(--bg-secondary);
-        color: var(--text-secondary);
+        background-color: var(--bg-primary);
+        color: var(--text-color);
         display: grid;
-        height: 100dvh;
-        overflow: scroll;
         place-items: center;
-        padding: 0 2rem;
       }
     </style>
   </body>

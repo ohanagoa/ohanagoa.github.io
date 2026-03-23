@@ -1,0 +1,53 @@
+<nav>
+  <ul>
+    <li><button>Home</button></li>
+    <li><button>Who We Are</button></li>
+    <li><button>Philosophy</button></li>
+    <li><button>Contact</button></li>
+  </ul>
+</nav>
+
+<style lang="scss">
+  nav {
+    display: grid;
+    margin: auto 0;
+    margin-right: 2rem;
+    color: var(--text-highlight);
+    ul {
+      list-style: none;
+      display: flex;
+      place-content: end;
+      gap: 1rem;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", e => {
+        if (!e.target) return;
+        const item = e.target as HTMLButtonElement;
+
+        if (/home/i.test(item.innerText)) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          return;
+        }
+
+        const target = document.querySelector(
+          `#${item.innerText.toLowerCase()}`,
+        );
+
+        if (!target) return;
+
+        target.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  });
+</script>

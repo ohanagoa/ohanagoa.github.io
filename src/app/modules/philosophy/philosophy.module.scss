@@ -2,21 +2,19 @@
   display: block;
   font-family: var(--font-alice);
   text-align: center;
-  padding: 0 0.5rem;
-  border-radius: 0.25rem;
-  background-color: var(--bg-primary);
+  border-radius: 1rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-dark);
+  max-width: min(90%, 780px);
 
-  h2 {
-    color: var(--text-secondary);
-  }
-
-  p {
-    color: var(--text-primary);
+  h2,
+  h3 {
+    color: var(--text-highlight);
   }
 
   ul {
     margin: 3rem 0;
-    padding: 0 0.5rem;
+    padding: 0;
 
     li {
       display: flex;
@@ -30,9 +28,11 @@
       }
 
     }
+  }
 
-    h3, p {
-      color: var(--text-dark);
-    }
+  padding: 0;
+
+  @media (min-width: 575px) {
+    padding: 0 0.5rem;
   }
 }

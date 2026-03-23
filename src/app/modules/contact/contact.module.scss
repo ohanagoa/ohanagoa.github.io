@@ -1,3 +1,56 @@
 .container {
   display: block;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  min-width: 480px;
+  color: var(--text-accent);
+  margin: 0.25rem 0.25rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  &__form_container {
+    display: grid;
+    place-items: center;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin: 1rem 0;
+      padding: 0;
+
+      li {
+        display: grid;
+        gap: 0.5rem;
+      }
+
+      label {
+        margin-right: 2rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        min-height: 1.5rem;
+      }
+
+    }
+
+    button {
+      display: grid;
+      margin: 0 auto;
+      place-content: center;
+      background-color: var(--bg-primary);
+      font-size: 1rem;
+      color: #fff;
+      width: 50%;
+      height: 1rem;
+      padding: 0.75rem 0.25rem;
+      border-radius: 0.25rem;
+    }
+  }
 }

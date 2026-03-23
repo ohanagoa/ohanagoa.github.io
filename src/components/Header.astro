@@ -1,0 +1,46 @@
+---
+import Navbar from './Navbar.astro'
+---
+
+<div class="container">
+  <div>
+    <img src="/logo.jpg" alt="logo" />
+  </div>
+  <Navbar />
+</div>
+
+<style lang="scss">
+  .container {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100%;
+    height: 6rem;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+    background-color: var(--bg-secondary);
+    color: var(--text-accent);
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hidden {
+    transform: translateY(-100%);
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleVisibility = () => {
+      const container = document.querySelector(".container");
+      if (!container) return;
+      container.classList.toggle("hidden", window.scrollY === 0);
+    };
+
+    toggleVisibility();
+    window.addEventListener("scroll", toggleVisibility);
+  });
+</script>

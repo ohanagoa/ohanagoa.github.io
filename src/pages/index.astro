@@ -1,8 +1,12 @@
 ---
-import Layout from '../layouts/Default.astro';
-import App from '../app/main';
+import Layout from "../layouts/Default.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import App from "../app/main";
 ---
 
 <Layout>
-  <App client:only="react"/>
+  <Header />
+  <App client:only="react" />
+  <Footer />
 </Layout>

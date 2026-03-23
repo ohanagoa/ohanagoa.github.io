@@ -3,8 +3,8 @@ import { items } from "./items.json";
 
 export default function Philosophy() {
   return (
-    <div className={styles.container}>
-      <h2>Our Philosopy</h2>
+    <div id='philosophy' className={styles.container}>
+      <h2>Our Philosophy</h2>
       <p>
         The current system of education in India is suited to a different time
         &ndash; <i>the Industrial Revolution</i>. It groups children according
