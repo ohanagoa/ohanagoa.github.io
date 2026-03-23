@@ -1,17 +1,15 @@
 import { StrictMode } from "react";
 import Hero from './modules/hero/Hero';
-import Testimonials from "./modules/testimonials/Testimonials";
-import Contact from "./modules/contact/Contact";
-import Gmap from "./modules/gmap/Gmap";
+import Whoweare from './modules/whoweare/Whoweare';
 import Philosophy from './modules/philosophy/Philosophy';
+import Contact from "./modules/contact/Contact";
 
 export default function App() {
   return (
     <StrictMode>
       <Hero />
+      <Whoweare />
       <Philosophy />
-      <Testimonials />
-      <Gmap />
       <Contact />
     </StrictMode>
   );

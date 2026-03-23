@@ -8,9 +8,9 @@
     background-image: url('/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 40%;
+    background-position: center;
     width: 100dvw;
-    height: 100dvh;
+    aspect-ratio: 16/9;
 
     &__overlay {
       position: absolute;
@@ -71,9 +71,11 @@
       }
     }
 
-    h2,
+    h2 {
+      color: var(--bg-primary);
+    }
     p {
-      color: var(--text-accent);
+      color: var(--text-dark);
     }
   }
 }

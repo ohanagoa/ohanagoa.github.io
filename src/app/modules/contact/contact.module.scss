@@ -5,7 +5,7 @@
   background-color: var(--bg-secondary);
   min-width: 480px;
   color: var(--text-accent);
-  margin: 0.25rem 0.25rem;
+  margin: 1rem;
 
   h2 {
     text-align: center;
@@ -15,6 +15,7 @@
   &__form_container {
     display: grid;
     place-items: center;
+    width: 100%;
 
     ul {
       display: flex;
@@ -22,6 +23,7 @@
       list-style: none;
       margin: 1rem 0;
       padding: 0;
+      width: calc(100% - 4rem);
 
       li {
         display: grid;
@@ -45,12 +47,12 @@
       margin: 0 auto;
       place-content: center;
       background-color: var(--bg-primary);
-      font-size: 1rem;
+      font-size: 1.25rem;
       color: #fff;
       width: 50%;
       height: 1rem;
       padding: 0.75rem 0.25rem;
-      border-radius: 0.25rem;
+      border-radius: 0.5rem;
     }
   }
 }

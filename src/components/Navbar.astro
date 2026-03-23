@@ -19,9 +19,18 @@
       place-content: end;
       gap: 1rem;
 
-      a {
-        text-decoration: none;
-        color: inherit;
+      button {
+        min-width: 4rem;
+        min-height: 2rem;
+        background-color: var(--text-accent);
+        color: #fff;
+        font-size: 1.25rem;
+        font-family: var(--font-alice);
+        border-radius: 0.5rem;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -41,7 +50,7 @@
         }
 
         const target = document.querySelector(
-          `#${item.innerText.toLowerCase()}`,
+          `#${item.innerText.toLowerCase().replaceAll(' ', '')}`,
         );
 
         if (!target) return;
