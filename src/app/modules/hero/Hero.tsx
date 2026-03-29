@@ -8,14 +8,13 @@ export default function Hero() {
         <div className={styles.container__image_wrapper__content_wrapper}>
           <div className={styles.container__image_wrapper__content_background}>
             <div className={styles.container__image_wrapper__copy_container}>
-              <h2>A Nature-Based School for Curious Young Minds</h2>
-              <p>
-                Alternative education for children aged 2 - 6 in Assagao, Goa
-              </p>
+              <h1>A Nature-Based School for Curious Young Minds</h1>
+              <p>Preschool Learning Space</p>
             </div>
             <div className={styles.container__image_wrapper__cta_container}>
-              <button>Schedule a Visit</button>
-              <button>Download Prospectus</button>
+              <a href="#contact">
+                <button>Schedule a Visit</button>
+              </a>
             </div>
           </div>
         </div>

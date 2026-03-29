@@ -1,6 +1,17 @@
 import styles from "./contact.module.scss";
 
 export default function Contact() {
+  const data = {
+    email: "ohanaschoolgoa@gmail.com",
+    telephone: "9820369161",
+    mobile: "8010864731",
+    instagram: "https://www.instagram.com/ohanagoa",
+    linkedin: "https://in.linkedin.com/company/ohana-kindergarten-goa",
+    facebook: "https://www.facebook.com/ohanaschoolofgrace/",
+    address:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.7763209459813!2d73.75053001161899!3d15.60359525167069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeb16300d706d%3A0x1643a435470f2f71!2sOhana%20Kindergarten%20and%20Music%20School!5e0!3m2!1sen!2sin!4v1774809413497!5m2!1sen!2sin",
+  };
+
   const handleSubmit: React.SubmitEventHandler<HTMLFormElement> = e => {
     e.preventDefault();
     e.stopPropagation();
@@ -14,21 +25,47 @@ export default function Contact() {
   return (
     <div id="contact" className={styles.container}>
       <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
+      <div className={styles.container__socials_container}>
+        <address>
+          <ul>
+            <li>
+              Email us at: <a href={`mailto: ${data.email}`}>{data.email}</a>
+            </li>
+            <li>
+              Call us on:{" "}
+              <a href={`tel: +91${data.telephone}`}>+91{data.telephone}</a> |{" "}
+              <a href={`tel: +91${data.mobile}`}>+91{data.mobile}</a>
+            </li>
+            <li>
+              Follow us on: <a href={data.instagram}>Instagram</a>,{" "}
+              <a href={data.facebook}>Facebook</a>
+            </li>
+          </ul>
+        </address>
+        <iframe
+          src={data.address}
+          width={600}
+          height={450}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
+        ></iframe>
+      </div>
+      {/* <form onSubmit={handleSubmit}>
         <div className={styles.container__form_container}>
           <ul>
             <li>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Leave us your email and we'll reach out to you.</label>
               <input id="email" name="email" type="email" required />
             </li>
             <li>
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" required rows={5} />
+              <label htmlFor="message">Please share your questions or concerns.</label>
+              <textarea id="message" name="message" rows={5} />
             </li>
           </ul>
           <button type="submit">Submit</button>
         </div>
-      </form>
+      </form> */}
     </div>
   );
 }

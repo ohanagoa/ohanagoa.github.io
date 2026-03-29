@@ -3,14 +3,13 @@
   font-family: var(--font-alice);
   text-align: center;
   border-radius: 1rem;
-  background-color: var(--bg-secondary);
-  color: var(--text-dark);
+  color: #fff;
   max-width: min(90%, 780px);
   margin: 1rem;
 
   h2,
   h3 {
-    color: var(--text-highlight);
+    color: var(--text-secondary);
   }
 
   ul {

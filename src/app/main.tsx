@@ -8,8 +8,8 @@ export default function App() {
   return (
     <StrictMode>
       <Hero />
-      <Whoweare />
       <Philosophy />
+      <Whoweare />
       <Contact />
     </StrictMode>
   );
