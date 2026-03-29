@@ -1,5 +1,32 @@
 .container {
   display: block;
   font-family: var(--font-alice);
-  color: var(--text-accent);
+
+  &__testimonial_wrapper {
+    max-width: min(90%, 780px);
+    text-align: center;
+    margin: auto;
+
+    h2 {
+      color: var(--text-secondary);
+      background-color: #00000010;
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+    }
+
+    &__testimonial_card {
+      background-color: var(--bg-secondary);
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem 0;
+      color: var(--text-color);
+      text-align: start;
+
+      strong {
+        display: block;
+        color: var(--text-accent);
+        text-align: right;
+      }
+    }
+  }
 }

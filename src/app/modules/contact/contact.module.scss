@@ -1,10 +1,11 @@
 .container {
   display: block;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--bg-secondary);
   color: var(--text-accent);
   margin: 1rem;
+  width: min(90%, 750px);
 
   h2 {
     text-align: center;

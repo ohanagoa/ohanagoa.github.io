@@ -17,9 +17,9 @@
     z-index: 1;
     display: grid;
     place-items: center;
-    opacity: 0.2;
+    opacity: 0.5;
     background-color: #3c3c3c;
-    background-size: contain;
+    background-size: cover;
     border-radius: 1rem;
     top: 0;
     width: 100%;
@@ -38,8 +38,10 @@
 
     h2 {
       color: var(--text-secondary);
-      background-color: #3c3c3c20;
-      border-radius: 50px;
+      text-transform: capitalize;
+      background-color: #00000010;
+      border-radius: 1rem;
+      padding: 1rem 2rem;
     }
 
     p {
@@ -57,5 +59,17 @@
         font-size: 1.85rem;
       }
     }
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    min-height: 12rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    min-height: 12rem;
   }
 }

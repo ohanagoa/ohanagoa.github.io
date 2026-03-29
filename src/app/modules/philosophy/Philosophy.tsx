@@ -1,5 +1,5 @@
 import styles from "./philosophy.module.scss";
-import { items } from "./items.json";
+import { items } from "./data.json";
 
 export default function Philosophy() {
   return (

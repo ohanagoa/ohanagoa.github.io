@@ -1,0 +1,40 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.item {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.triggerButton {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0;
+  text-decoration: underline;
+
+  &.readLess {
+    padding: 10px 0 0 0;
+  }
+
+  &:hover {
+    color: #004499;
+  }
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
