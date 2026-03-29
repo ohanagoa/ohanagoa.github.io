@@ -93,4 +93,11 @@
     }
 
   }
+
+  @media (max-width: 575px) {
+    &__image_wrapper {
+      width: 660px;
+
+    }
+  }
 }

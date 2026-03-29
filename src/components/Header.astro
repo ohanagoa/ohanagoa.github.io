@@ -1,5 +1,5 @@
 ---
-import Navbar from './Navbar.astro'
+import Navbar from "./Navbar.astro";
 ---
 
 <div class="container">
@@ -29,6 +29,14 @@ import Navbar from './Navbar.astro'
 
   .hidden {
     transform: translateY(-100%);
+  }
+
+  @media (max-width: 575px) {
+    div:is(:first-child) {
+      img {
+        transform: translateX(310%);
+      }
+    }
   }
 </style>
 

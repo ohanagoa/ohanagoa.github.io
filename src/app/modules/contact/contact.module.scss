@@ -3,7 +3,6 @@
   border-radius: 1rem;
   padding: 1rem;
   background-color: var(--bg-secondary);
-  min-width: 480px;
   color: var(--text-accent);
   margin: 1rem;
 
@@ -14,6 +13,18 @@
 
   ul {
     list-style: none;
+  }
+
+  iframe {
+    width: 600px;
+    height: 450px;
+
+    @media (max-width: 575px) {
+      iframe {
+        width: 400px;
+        height: 450px;
+      }
+    }
   }
 
   &__socials_container {
@@ -88,4 +99,5 @@
       border-radius: 0.5rem;
     }
   }
+
 }

@@ -49,6 +49,13 @@ import { Font } from "astro:assets";
         display: grid;
         place-items: center;
       }
+
+      @media (max-width: 575px) {
+        main {
+          padding: 0.5rem;
+          width: fit-content;
+        }
+      }
     </style>
   </body>
 </html>
