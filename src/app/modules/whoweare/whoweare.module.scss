@@ -27,7 +27,7 @@
   }
 
   &__content {
-    position:relative;
+    position: relative;
     z-index: 2;
     place-self: center;
     padding: 0.5rem 4rem;
@@ -38,10 +38,24 @@
 
     h2 {
       color: var(--text-secondary);
+      background-color: #3c3c3c20;
+      border-radius: 50px;
     }
 
     p {
       color: #fff
+    }
+  }
+
+  @media (max-width: 575px) {
+    &__content {
+      p {
+        font-size: 1.25rem;
+      }
+
+      h2 {
+        font-size: 1.85rem;
+      }
     }
   }
 }
