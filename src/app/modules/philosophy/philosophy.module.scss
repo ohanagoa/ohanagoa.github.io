@@ -7,8 +7,7 @@
   width: min(100%, 780px);
   margin: 1rem;
 
-  h2,
-  h3 {
+  h2 {
     color: var(--text-secondary);
   }
 
@@ -32,7 +31,16 @@
 
   padding: 0;
 
-  @media (min-width: 575px) {
+  @media (max-width: 575px) {
     padding: 0 0.5rem;
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.85rem;
+    }
+
   }
 }

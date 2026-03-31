@@ -29,16 +29,30 @@ export default function Contact() {
         <address>
           <ul>
             <li>
-              Email us at: <a href={`mailto: ${data.email}`}>{data.email}</a>
+              Email us at:{" "}
+              <a href={`mailto:${data.email}`} target="_blank">
+                {data.email}
+              </a>
             </li>
             <li>
               Call us on:{" "}
-              <a href={`tel: +91${data.telephone}`}>+91{data.telephone}</a> |{" "}
-              <a href={`tel: +91${data.mobile}`}>+91{data.mobile}</a>
+              <a href={`tel: +91${data.telephone}`} target="_blank">
+                +91{data.telephone}
+              </a>{" "}
+              |{" "}
+              <a href={`tel: +91${data.mobile}`} target="_blank">
+                +91{data.mobile}
+              </a>
             </li>
             <li>
-              Follow us on: <a href={data.instagram}>Instagram</a>,{" "}
-              <a href={data.facebook}>Facebook</a>
+              Follow us on:{" "}
+              <a href={data.instagram} target="_blank">
+                Instagram
+              </a>
+              ,{" "}
+              <a href={data.facebook} target="_blank">
+                Facebook
+              </a>
             </li>
           </ul>
         </address>

@@ -13,7 +13,7 @@ export default function Philosophy() {
         approach. It primarily prepares children for a degree followed by a job.
       </p>
       <ul>
-        <h3>At Ohana, we believe</h3>
+        <h2>At Ohana, we believe</h2>
         {items.map((item, index) => (
           <li key={`item_${index}`}>
             <p dangerouslySetInnerHTML={{ __html: item }} />
