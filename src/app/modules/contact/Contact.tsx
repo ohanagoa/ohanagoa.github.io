@@ -9,7 +9,7 @@ export default function Contact() {
     linkedin: "https://in.linkedin.com/company/ohana-kindergarten-goa",
     facebook: "https://www.facebook.com/ohanaschoolofgrace/",
     address:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.7763209459813!2d73.75053001161899!3d15.60359525167069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeb16300d706d%3A0x1643a435470f2f71!2sOhana%20Kindergarten%20and%20Music%20School!5e0!3m2!1sen!2sin!4v1774809413497!5m2!1sen!2sin",
+      `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.8254593969536!2d73.7851512!3d15.6009716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeb16300d706d%3A0x1643a435470f2f71!2sOhana%20Kindergarten%20and%20Music%20School!5e0!3m2!1sen!2sin!4v1779729374014!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"`,
   };
 
   // const handleSubmit: React.SubmitEventHandler<HTMLFormElement> = e => {

@@ -17,11 +17,9 @@ import Footer from "../components/Footer.astro";
     <title>Ohana Goa | With Love, in Service.</title>
   </head>
   <body>
-    <main>
-      <Header />
-      <slot />
-      <Footer />
-    </main>
+    <Header />
+    <slot />
+    <Footer />
 
     <style>
       :root {
@@ -45,7 +43,7 @@ import Footer from "../components/Footer.astro";
         scroll-behavior: smooth;
       }
 
-      main {
+      body {
         position: relative;
         font-family: var(--font-oswald);
         background-color: var(--bg-primary);
@@ -55,9 +53,9 @@ import Footer from "../components/Footer.astro";
       }
 
       @media (max-width: 575px) {
-        main {
+        body {
+          width: 100dvw;
           padding: 0.5rem;
-          width: fit-content;
         }
       }
     </style>

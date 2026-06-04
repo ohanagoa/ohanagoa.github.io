@@ -2,12 +2,12 @@
   display: block;
   font-family: var(--font-alice);
   position: relative;
-
+  min-height: 100dvh;
 
   &__image_wrapper {
     position: relative;
     z-index: 0;
-    background-image: url('/hero.jpg');
+    background-image: url('/hero.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -47,7 +47,7 @@
     }
 
     &__copy_container {
-      min-height: 5rem;
+      min-height: 3rem;
 
       h1 {
         color: var(--text-accent);
@@ -69,13 +69,17 @@
       background-color: transparent;
 
 
-      button {
+      a {
+        display: grid;
+        place-content: center;
+        text-decoration: none;
         min-width: 12rem;
-        min-height: 4rem;
+        min-height: 3rem;
         color: #fff;
         font-size: 1.25rem;
         font-family: var(--font-alice);
         border-radius: 0.5rem;
+        padding: 0.5rem;
 
         &:hover {
           cursor: pointer;
@@ -94,10 +98,18 @@
 
   }
 
-  @media (max-width: 575px) {
+}
+
+@media (max-width: 575px) {
+  .container {
+    min-height: 90dvh;
+
     &__image_wrapper {
       width: 660px;
 
+      &__content_wrapper {
+        bottom: -18rem;
+      }
     }
   }
 }

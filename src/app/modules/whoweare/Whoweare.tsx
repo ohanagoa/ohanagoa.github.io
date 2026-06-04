@@ -7,7 +7,7 @@ export default function Whoweare() {
       <div className={styles.container__content_wrapper}>
         <div className={styles.container__content__overlay}></div>
         <div className={styles.container__content}>
-          <h2>Who We Are</h2>
+          <h2>who we are</h2>
           <p>
             Ohana, in Hawaiian, means Family. Not only, the family that we are
             born into, but also the family we choose. Ohana is a preschool where a

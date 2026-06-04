@@ -1,25 +1,29 @@
 <nav>
   <ul>
-    <li><button>Home</button></li>
-    <li><button>Philosophy</button></li>
-    <li><button>Who We Are</button></li>
-    <li><button>Contact</button></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#philosophy">Philosophy</a></li>
+    <li><a href="#whoweare">Who We Are</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <style lang="scss">
   nav {
     display: grid;
-    margin: auto 0;
-    margin-right: 2rem;
     color: var(--text-highlight);
     ul {
       list-style: none;
       display: flex;
       place-content: end;
-      gap: 1rem;
+      transform: translateX(-3rem);
+      gap: 0.25rem;
 
-      button {
+      a {
+        display: grid;
+        place-content: center;
+        text-decoration: none;
+        padding: 0.25rem;
         min-width: 4rem;
         min-height: 2rem;
         background-color: var(--text-accent);
@@ -42,11 +46,12 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const buttons = document.querySelectorAll("button");
+    const buttons = document.querySelectorAll("a");
     buttons.forEach(btn => {
       btn.addEventListener("click", e => {
+        e.preventDefault();
         if (!e.target) return;
-        const item = e.target as HTMLButtonElement;
+        const item = e.target as HTMLAnchorElement;
 
         if (/home/i.test(item.innerText)) {
           window.scrollTo({ top: 0, behavior: "smooth" });
@@ -59,7 +64,7 @@
 
         if (!target) return;
 
-        target.scrollIntoView({ behavior: "smooth" });
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
       });
     });
   });
